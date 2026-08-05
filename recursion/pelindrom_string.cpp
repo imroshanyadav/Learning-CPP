@@ -7,7 +7,6 @@ bool palindrome(int i, string& s) {
     // and the string is a palindrome, return true.
     if (i >= s.length() / 2) return true;
 
-    // If the start and end characters are not equal, it's not a palindrome.
     if (s[i] != s[s.length() - i - 1]) return false;
 
     // If both characters are the same, increment i and check start+1 and end-1.
