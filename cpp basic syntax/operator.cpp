@@ -52,7 +52,8 @@ int main(){
     std :: cout << (5>>3) << endl; // right shift 
     std :: cout << (5<<3) << endl; // left shift 
 
-    
+    // oder of operator 
+    // 
 
     return 0;
 }
