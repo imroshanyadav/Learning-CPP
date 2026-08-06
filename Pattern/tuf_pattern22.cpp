@@ -1,10 +1,12 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    int n ;
-    cin>>n;
-     for (int i = 0; i < 2 * n - 1; i++) {
+class Solution {
+public:
+    // Function to print concentric square number pattern
+    void pattern22(int n) {
+        // Outer loop for rows
+        for (int i = 0; i < 2 * n - 1; i++) {
             // Inner loop for columns
             for (int j = 0; j < 2 * n - 1; j++) {
                 // Calculate distance from top
@@ -25,6 +27,19 @@ int main(){
             // Move to the next row
             cout << endl;
         }
-    return 0;
+    }
+};
 
+int main() {
+    // Create object of Solution class
+    Solution sol;
+
+    // Define size of pattern
+    int N ;
+    cin>>N;
+
+    // Call pattern function
+    sol.pattern22(N);
+
+    return 0;
 }
